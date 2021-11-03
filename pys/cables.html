@@ -1,0 +1,360 @@
+ <html>
+
+ <head>
+     <meta charset="utf-8">
+     <title>Cables y Adaptadores | Soluciones Tech & Game</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+     <script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+     <script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
+
+     <link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
+     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/ico.png">
+
+     <style>
+         * {
+             margin: 0;
+             padding: 0;
+         }
+
+         body {
+             background-image: url("images/bg.jpg");
+             color: #444;
+             font-size: 12px;
+             color: #333;
+             font-family: 'Oswald', sans-serif;
+         }
+
+
+         .booklet {
+             width: 900px;
+             height: 607px;
+             position: relative;
+             margin: 0 auto 10px;
+             -moz-box-shadow: 0px 0px 1px #fff;
+             -webkit-box-shadow: 0px 0px 1px #fff;
+             box-shadow: 0px 0px 1px #fff;
+             -moz-border-radius: 10px;
+             -webkit-border-radius: 10px;
+             border-radius: 10px;
+         }
+
+         .booklet .b-wrap-left {
+             background: #fff url(images/left_bg.jpg) no-repeat top left;
+             -webkit-border-top-left-radius: 10px;
+             -webkit-border-bottom-left-radius: 10px;
+             -moz-border-radius-topleft: 10px;
+             -moz-border-radius-bottomleft: 10px;
+             border-top-left-radius: 10px;
+             border-bottom-left-radius: 10px;
+         }
+
+         .booklet .b-wrap-right {
+             background: #efefef url(images/right_bg.jpg) no-repeat top left;
+             -webkit-border-top-right-radius: 10px;
+             -webkit-border-bottom-right-radius: 10px;
+             -moz-border-radius-topright: 10px;
+             -moz-border-radius-bottomright: 10px;
+             border-top-right-radius: 10px;
+             border-bottom-right-radius: 10px;
+         }
+
+         .booklet .b-counter {
+             bottom: 10px;
+             position: absolute;
+             display: block;
+             width: 90%;
+             height: 20px;
+             border-top: 1px solid #ddd;
+             color: #222;
+             text-align: center;
+             font-size: 12px;
+             padding: 5px 0 0;
+             background: transparent;
+             -moz-box-shadow: 0px -1px 1px #fff;
+             -webkit-box-shadow: 0px -1px 1px #fff;
+             box-shadow: 0px -1px 1px #fff;
+             opacity: 0.8;
+         }
+
+         .book_wrapper {
+             margin: 0 auto;
+             padding-top: 50px;
+             width: 905px;
+             height: 540px;
+             position: relative;
+             background: transparent url(images/bg.png) no-repeat 9px 27px;
+         }
+
+         .book_wrapper h1 {
+             color: orange;
+             margin: 5px 5px 5px 15px;
+             font-size: 24px;
+             background: transparent url(images/h1.png) no-repeat bottom left;
+             padding-bottom: 7px;
+             text-transform: uppercase;
+             font-weight: normal;
+         }
+
+         .book_wrapper p {
+             font-size: 15px;
+             margin: 5px 5px 5px 15px;
+         }
+
+         .book_wrapper a.article,
+         .book_wrapper a.demo {
+             background: transparent url(images/circle.png) no-repeat 50% 0px;
+             display: block;
+             width: 95px;
+             height: 41px;
+             text-decoration: none;
+             outline: none;
+             font-size: 16px;
+             color: #555;
+             float: left;
+             line-height: 41px;
+             padding-left: 47px;
+         }
+
+         .book_wrapper a.demo {
+             margin-left: 50px;
+         }
+
+         .book_wrapper a.article:hover,
+         .book_wrapper a.demo:hover {
+             background-position: 50% -41px;
+             color: #13386a;
+         }
+
+         .book_wrapper img {
+             margin: 10px 0px 5px 35px;
+             width: 300px;
+             padding: 4px;
+             border: 1px solid #ddd;
+             -moz-box-shadow: 1px 1px 1px #fff;
+             -webkit-box-shadow: 1px 1px 1px #fff;
+             box-shadow: 1px 1px 1px #fff;
+         }
+
+         .booklet .b-wrap-right img {
+             border: 1px solid #E6E3C2;
+         }
+
+         a#next_page_button,
+         a#prev_page_button {
+             display: none;
+             position: absolute;
+             width: 41px;
+             height: 40px;
+             cursor: pointer;
+             margin-top: -20px;
+             top: 50%;
+             background: transparent url(images/buttons.png) no-repeat 0px -40px;
+         }
+
+         a#prev_page_button {
+             left: -30px;
+         }
+
+         a#next_page_button {
+             right: -30px;
+             background-position: -41px -40px;
+         }
+
+         a#next_page_button:hover {
+             background-position: -41px 0px;
+         }
+
+         a#prev_page_button:hover {
+             background-position: 0px 0px;
+         }
+
+     </style>
+
+ </head>
+
+ <body>
+
+     <div class="book_wrapper">
+         <a id="next_page_button"></a>
+         <a id="prev_page_button"></a>
+
+         <div id="mybook" style="display:none;">
+             <div class="b-load">
+                 <div>
+                     <h4>Powerbanks</h4>
+                     <img width="250" height="250" src="images/cables/1.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Cable USB Tipo C</h1>
+                     <p>
+                         Mantente siempre con energía mientras transfieres información a tu computadora sin intervenciones. Compatible con dispositivos entrada USB-C.
+
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$80.00</a>
+                 </div>
+
+                 <div>
+                     <img width="250" height="250" src="images/cables/2.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Cable HDMI 2.0 Full 4K</h1>
+                     <p>
+                         El cable más extendido hoy en día, ya que añade soporte para 4K a 60Hz, hasta cuatro streams de audio, y soporte para HDR dinámico.
+                     </p>
+                     <a href="" target="_blank" class="article">Disponible</a>
+                     <a href="" class="demo">$750.00</a>
+                 </div>
+
+                 <div>
+                     <h4>Powerbanks</h4>
+                     <img width="300" height="200" src="images/cables/3.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Cargador Universal Laptop Voltaje Variable 8 Puntas</h1>
+                     <p>
+                         Es compatible con las marcas más importantes en laptops (Toshiba®, DELL®, Sony®, lenovo®, COMPAQ®, IBM®, acer®, ASUS®, Gateway®, DELTA®, FUJITSU®)
+                     </p>
+                     <a href="" target="_blank" class="article">Disponible</a>
+                     <a href="" class="demo">$350.00</a>
+                 </div>
+                 <div>
+                     <img width="250" height="250" src="images/cables/4.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Case Disco Duro 2.5 USB 2.0 a IDE</h1>
+                     <p>
+                         Soporte de 2,5 “IDE Discos Duros 40 ~ 2TB
+                         Datos rápido / Acceso a archivos y Velocidad de transferencia de hasta 480MB / s USB 2.0 a IDE. (No SATA)
+                     </p>
+                     <a href="" target="_blank" class="article">Disponible</a>
+                     <a href="" class="demo">$350.00</a>
+                 </div>
+                 <div>
+                     <h4>Powerbanks</h4>
+                     <img width="200" height="200" src="images/cables/5.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Adaptador HDMI Macho a DVI-I Hembra</h1>
+                     <p>
+                         Conector de HDMI (macho) a DVI (hembra). - Conecta un equipo con salida HDMI a una entrada DVI -I. - Conector DVI-I (24 + 5).
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$200.00</a>
+                 </div>
+                 <div>
+                     <img width="250" height="250" src="images/cables/6.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Adaptador HDMI a Mini HDMI</h1>
+                     <p>
+                         Con este adaptador podes conectar cualquier dispositivo con salida mini HDMI a un cable HDMI estándar aprovechando la calidad de imagen y sonido de alta fidelidad.
+                     </p>        
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$150.00</a>
+                 </div>
+                 <div id="t_p2">
+                     <h4>Powerbanks</h4>
+                     <img width="200" height="200" src="images/cables/7.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Divisor Audio Estéreo 3.5mm</h1>
+                     <p>
+                         Este es un conector de audio Splitter con puertos dual. convierte rápidamente y transmite música, llamadas de teléfono o, etc. de un dispositivo a uno de los dos dispositivos de salida que se conecta en él.
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$970.00</a>
+                 </div>
+                 <div>
+                     <img width="200" height="200" src="images/cables/8.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Adaptador Caddy Disco Duro Sata 2.5 Laptop 9.5mm</h1>
+                     <p>
+                         Permite conectar un disco duro externo, compatible con cable SATA y entrada SATA3 para expandir el almacenamiento de tu laptop. 
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$500.00</a>
+                 </div>
+                 <div>
+                     <h4>Teclados</h4>
+                     <img width="200" height="200" src="images/cables/9.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Cable Imán Lighting para Iphone Carga Rápida</h1>
+                     <p>
+                         Cable Imán Para Celular Iphone Lightning IOS Carga Rápida, compatible con todos los todos los modelos de Iphone.
+                     </p>
+
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$250.00</a>
+                 </div>
+                 <div>
+                     <img src="images/cables/10.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Cable HDMI Varios Tamaños</h1>
+                     <p>
+                         Compatible con Dispositivos con Salida HDMI: Laptop, Pc Escritorio, Xbox 360, Xbox One, 720 Ps4, Ps3, Apple TV. (El precio varia dependiendo la longitud del cable)
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$$$</a>
+                 </div>
+                 <!-- Final de la sección -->
+
+                 <div>
+                     <img width="200" height="200" src="images/cables/11.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Conector múltiple VGA macho a hembra.</h1>
+                     <p>
+                         Transmite de forma confiable una señal VGA idéntica a dos monitores distintos. Evita la interferencia y la pérdida de señal, elaborado con materiales de calidad para uso frecuente.
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$200.00</a>
+                 </div>
+
+                 <div>
+                     <img src="images/cables/12.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Protector de sobretensión Forza</h1>
+                     <p>
+                         Ofrece protección superior al redireccionar el exceso de tensión de los equipos conectados durante sobrecargas o subidas de tensión. Sistema fiable equipado con protección contra sobretensión y con avanzados puertos USB.
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$700.00</a>
+                 </div>
+
+             </div>
+         </div>
+     </div>
+
+     <script type="text/javascript">
+         $(function() {
+             var $mybook = $('#mybook');
+             var $bttn_next = $('#next_page_button');
+             var $bttn_prev = $('#prev_page_button');
+             var $loading = $('#loading');
+             var $mybook_images = $mybook.find('img');
+             var cnt_images = $mybook_images.length;
+             var loaded = 0;
+
+             $mybook_images.each(function() {
+                 var $img = $(this);
+                 var source = $img.attr('src');
+                 $('<img/>').load(function() {
+                     ++loaded;
+                     if (loaded == cnt_images) {
+                         $loading.hide();
+                         $bttn_next.show();
+                         $bttn_prev.show();
+                         $mybook.show().booklet({
+                             name: null, //  
+                             width: 800, //  
+                             height: 500, //   
+                             speed: 600, //  
+                             direction: 'LTR', //  
+                             //  
+                             next: $bttn_next, //  
+                             prev: $bttn_prev, //  
+
+                         });
+                         Cufon.refresh();
+                     }
+                 }).attr('src', source);
+             });
+
+         });
+
+
+
+         function mostrar() {
+
+         }
+
+     </script>
+
+ </body>
+
+ </html>

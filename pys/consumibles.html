@@ -1,0 +1,347 @@
+ <html>
+
+ <head>
+     <meta charset="utf-8">
+     <title>Consumibles | Soluciones Tech & Game</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+     <script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+     <script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
+
+     <link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
+     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo/ico.png">
+
+     <style>
+         * {
+             margin: 0;
+             padding: 0;
+         }
+
+         body {
+             background-image: url("images/bg.jpg");
+             color: #444;
+             font-size: 12px;
+             color: #333;
+             font-family: 'Oswald', sans-serif;
+         }
+
+
+         .booklet {
+             width: 900px;
+             height: 607px;
+             position: relative;
+             margin: 0 auto 10px;
+             -moz-box-shadow: 0px 0px 1px #fff;
+             -webkit-box-shadow: 0px 0px 1px #fff;
+             box-shadow: 0px 0px 1px #fff;
+             -moz-border-radius: 10px;
+             -webkit-border-radius: 10px;
+             border-radius: 10px;
+         }
+
+         .booklet .b-wrap-left {
+             background: #fff url(images/left_bg.jpg) no-repeat top left;
+             -webkit-border-top-left-radius: 10px;
+             -webkit-border-bottom-left-radius: 10px;
+             -moz-border-radius-topleft: 10px;
+             -moz-border-radius-bottomleft: 10px;
+             border-top-left-radius: 10px;
+             border-bottom-left-radius: 10px;
+         }
+
+         .booklet .b-wrap-right {
+             background: #efefef url(images/right_bg.jpg) no-repeat top left;
+             -webkit-border-top-right-radius: 10px;
+             -webkit-border-bottom-right-radius: 10px;
+             -moz-border-radius-topright: 10px;
+             -moz-border-radius-bottomright: 10px;
+             border-top-right-radius: 10px;
+             border-bottom-right-radius: 10px;
+         }
+
+         .booklet .b-counter {
+             bottom: 10px;
+             position: absolute;
+             display: block;
+             width: 90%;
+             height: 20px;
+             border-top: 1px solid #ddd;
+             color: #222;
+             text-align: center;
+             font-size: 12px;
+             padding: 5px 0 0;
+             background: transparent;
+             -moz-box-shadow: 0px -1px 1px #fff;
+             -webkit-box-shadow: 0px -1px 1px #fff;
+             box-shadow: 0px -1px 1px #fff;
+             opacity: 0.8;
+         }
+
+         .book_wrapper {
+             margin: 0 auto;
+             padding-top: 50px;
+             width: 905px;
+             height: 540px;
+             position: relative;
+             background: transparent url(images/bg.png) no-repeat 9px 27px;
+         }
+
+         .book_wrapper h1 {
+             color: orange;
+             margin: 5px 5px 5px 15px;
+             font-size: 24px;
+             background: transparent url(images/h1.png) no-repeat bottom left;
+             padding-bottom: 7px;
+             text-transform: uppercase;
+             font-weight: normal;
+         }
+
+         .book_wrapper p {
+             font-size: 15px;
+             margin: 5px 5px 5px 15px;
+         }
+
+         .book_wrapper a.article,
+         .book_wrapper a.demo {
+             background: transparent url(images/circle.png) no-repeat 50% 0px;
+             display: block;
+             width: 95px;
+             height: 41px;
+             text-decoration: none;
+             outline: none;
+             font-size: 16px;
+             color: #555;
+             float: left;
+             line-height: 41px;
+             padding-left: 47px;
+         }
+
+         .book_wrapper a.demo {
+             margin-left: 50px;
+         }
+
+         .book_wrapper a.article:hover,
+         .book_wrapper a.demo:hover {
+             background-position: 50% -41px;
+             color: #13386a;
+         }
+
+         .book_wrapper img {
+             margin: 10px 0px 5px 35px;
+             width: 300px;
+             padding: 4px;
+             border: 1px solid #ddd;
+             -moz-box-shadow: 1px 1px 1px #fff;
+             -webkit-box-shadow: 1px 1px 1px #fff;
+             box-shadow: 1px 1px 1px #fff;
+         }
+
+         .booklet .b-wrap-right img {
+             border: 1px solid #E6E3C2;
+         }
+
+         a#next_page_button,
+         a#prev_page_button {
+             display: none;
+             position: absolute;
+             width: 41px;
+             height: 40px;
+             cursor: pointer;
+             margin-top: -20px;
+             top: 50%;
+             background: transparent url(images/buttons.png) no-repeat 0px -40px;
+         }
+
+         a#prev_page_button {
+             left: -30px;
+         }
+
+         a#next_page_button {
+             right: -30px;
+             background-position: -41px -40px;
+         }
+
+         a#next_page_button:hover {
+             background-position: -41px 0px;
+         }
+
+         a#prev_page_button:hover {
+             background-position: 0px 0px;
+         }
+
+     </style>
+
+ </head>
+ <body>
+     <div class="book_wrapper">
+         <a id="next_page_button"></a>
+         <a id="prev_page_button"></a>
+
+         <div id="mybook" style="display:none;">
+             <div class="b-load">
+                 <div>
+                     <h4>Teclados</h4>
+                     <img src="images/t1.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Teclado Gamer XZEAL XZ1020</h1>
+                     <p>
+                         Teclado mecánico con Switches “red” lineales.
+                         Con una sensación suave y un tiempo mínimo de respuesta es el teclado ideal para el gaming o tus actividades cotidianas. <br><br> Disfruta de su comodidad y pequeño tamaño ya que es un teclado 60%, sin perder las teclas especiales.
+
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$1,400.00</a>
+                 </div>
+
+                 <div>
+                     <img width="300" height="200" src="images/t2.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Teclado mecánico Ele-gate TC17</h1>
+                     <p>
+                         El Teclado Gamer Mecánico Metal está pensado para competir en el mercado de los teclados Gamer, tiene todas las prestaciones que un Gamer necesita. <br><br>
+
+                         Cuenta con Switches “blue” clicky que soportan hasta 30 millones de pulsaciones.
+                     </p>
+                     <a href="" target="_blank" class="article">Disponible</a>
+                     <a href="" class="demo">$750.00</a>
+                 </div>
+
+                 <div>
+                     <h4>Teclados</h4>
+                     <img width="300" height="200" src="images/t3.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Logitech G213 PRODIGY</h1>
+                     <p>
+                         El teclado G213 para juegos está dotado de teclas Logitech G Mech-Dome ajustadas especialmente para ofrecer una respuesta táctil superior. G HUB permite personalizar G213, para un uso más práctico y exclusivo.
+                     </p>
+                     <a href="" target="_blank" class="article">Disponible</a>
+                     <a href="" class="demo">$1,500.00</a>
+                 </div>
+                 <div>
+                     <img src="images/t4.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Teclado Gamer XZEAL XST-300</h1>
+                     <p>
+                         Teclado de membrana Gamer, con sistema Anti-Ghosting para obtener todas las ventajas de un modelo mecánico. Cuenta con 3 modos de iluminación y distribución en español para que puedas comenzar a usarlo tan pronto lo conectes a tu equipo. <br><br>Con 87 teclas y un cable reforzado de 1.5mts llévalo a todas partes, trabajando con fluidez y comodidad.
+                     </p>
+                     <a href="" target="_blank" class="article">Disponible</a>
+                     <a href="" class="demo">$700.00</a>
+                 </div>
+                 <div>
+                     <h4>Teclados</h4>
+                     <img src="images/t5.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Kit Teclado Y Mouse Inalambricos Dell Km117</h1>
+                     <p>
+                         Mejore la productividad diaria con el teclado y mouse inalámbrico de Dell: cuenta con un diseño elegante y compacto que cabe cómodamente en cualquier configuración de escritorio. <br><br>
+                         Un teclado de tamaño completo ofrece una experiencia cómoda al escribir y cuenta con un diseño de 3 secciones con teclas multimedia y de acceso rápido.
+
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$800.00</a>
+                 </div>
+                 <div>
+                     <img src="images/t6.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Kit de Teclado y Mouse Alambrico Naceb NA-112N</h1>
+                     <p>
+                         Sus teclas te permitirán 3 millones de pulsaciones, lo que significa una larga vida del teclado.
+                     </p>
+                     <p>
+                         Sólo conéctalo al puerto USB de tu equipo para comenzar, es compatible con Windows XP/ Windows 7 / Windows 8 / Windows 10.
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$480.00</a>
+                 </div>
+                 <div id="t_p2">
+                     <h4>Teclados</h4>
+                     <img src="images/t7.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Teclado Bluetooth Inalámbrico K380</h1>
+                     <p>
+                         Con el teclado K380 Bluetooth de Logitech, conecta hasta 3 dispositivos e intercambia entre ellos con un solo botón. Compatible con cualquier dispositivo que permita periféricos de escritura.
+                     </p>
+                     <p>
+                         Duración de hasta 2 meses con las baterías alcalinas incluidas. Además, con su diseño 60% ahorra espacio sin perder funcionalidad.
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$970.00</a>
+                 </div>
+                 <div>
+                     <img src="images/t8.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Teclado Bluetooth 4.0 Ele-gate TC05</h1>
+                     <p>
+                         Escribe cuando y donde quieras con este Mini Teclado Inalámbrico Bluetooth.
+                     </p>
+                     <p>
+                         Con este teclado podrás conectarte de forma inalámbrica a tu Macbook, PC, Laptop o dispositivos con Bluetooth.
+                     </p>
+                     <p>
+                         Al ser inalámbrico no cuenta con cables ni conexiones, es Ligero y fácil de llevar en la maleta de viaje o mochila de <estudiante class=""></estudiante>
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$400.00</a>
+                 </div>
+                 <div>
+                     <h4>Teclados</h4>
+                     <img src="images/t9.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Kit Teclado Y Mouse Usb Alámbrico Ele-gate ST01</h1>
+                     <p>
+                         Excelente opción kit de mouse y Teclado alfanumérico en español integrada la letra Ñ. Compacto y ligero, con todo lo que necesitas para trabajar desde casa u oficina.
+                     </p>
+
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$250.00</a>
+                 </div>
+                 <div>
+                     <img src="images/t10.jpg" alt="" />
+                     <h1 style="color: rebeccapurple;">Teclado Usb Estándar Ele-gate TC01</h1>
+                     <p>
+                         El teclado para PC, tiene un diseño altamente funcional, ya que se conecta a la computadora por medio del puerto USB e incorpora indicadores de mayúsculas y teclado numérico. Fabricado en plástico ABS con acabado mate.
+                     </p>
+                     <a href="" class="article">Disponible</a>
+                     <a href="" class="demo">$200.00</a>
+                 </div>
+                 <!-- Final de la sección -->
+             </div>
+         </div>
+     </div>
+
+     <script type="text/javascript">
+         $(function() {
+             var $mybook = $('#mybook');
+             var $bttn_next = $('#next_page_button');
+             var $bttn_prev = $('#prev_page_button');
+             var $loading = $('#loading');
+             var $mybook_images = $mybook.find('img');
+             var cnt_images = $mybook_images.length;
+             var loaded = 0;
+
+             $mybook_images.each(function() {
+                 var $img = $(this);
+                 var source = $img.attr('src');
+                 $('<img/>').load(function() {
+                     ++loaded;
+                     if (loaded == cnt_images) {
+                         $loading.hide();
+                         $bttn_next.show();
+                         $bttn_prev.show();
+                         $mybook.show().booklet({
+                             name: null, //  
+                             width: 800, //  
+                             height: 500, //   
+                             speed: 600, //  
+                             direction: 'LTR', //  
+                             //  
+                             next: $bttn_next, //  
+                             prev: $bttn_prev, //  
+
+                         });
+                         Cufon.refresh();
+                     }
+                 }).attr('src', source);
+             });
+
+         });
+
+     </script>
+
+ </body>
+
+ </html>
