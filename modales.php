@@ -14,8 +14,8 @@
                     <p>
                         Nos especializamos en todo tipo de reparaciones tanto a nivel hardware como software. La revisión no tiene costo alguno y, dependiendo del problema, nos ajustamos a tu presupuesto para brindarte la mejor solución.
                     </p>
-
-                    <center><img src="assets/img/" alt=""></center>
+                    
+                    <center> <img src="assets/img/" alt=""> </center>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" data-dismiss="modal">Cerrar</button>
