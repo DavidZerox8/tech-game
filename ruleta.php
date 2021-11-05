@@ -10,13 +10,15 @@
 <html class="no-js" lang="es">
 
 <head>
+
+    <title> Ruleta de la suerte | Soluciones Tech & Game</title>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Ruleta de la suerte | Soluciones Tech & Game</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/ico.png">
-    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
@@ -49,7 +51,7 @@
 <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v11.0" nonce="bEL33p3J"></script>
-    
+
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
@@ -59,21 +61,21 @@
                 </div>
             </div>
         </div>
-    </div>    
-    <header>        
+    </div>
+    <header>
         <div class="header-area header-transparent">
             <div class="main-header ">
                 <div class="header-bottom  header-sticky">
                     <div class="container-fluid">
-                        <div class="row align-items-center">                            
+                        <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
-                                <div class="logo">                                    
+                                <div class="logo">
                                     <a href="index.php"><img width="220" height="100" src="assets/img/logo/elbiuenosegun.png" alt=""></a>
 
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
-                                <div class="menu-wrapper d-flex align-items-center justify-content-end">                                    
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
@@ -87,14 +89,14 @@
 
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact.php">Contacto</a></li>                                                
+                                                <li><a href="contact.php">Contacto</a></li>
                                                 <li style="display:none;" class="button-header margin-left "><a href="register.php" class="btn">Registrate</a></li>
                                                 <li style="display:none;" class="button-header"><a href="login.php" class="btn3">Iniciar sesi&oacute;n</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
@@ -102,10 +104,10 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </header>
-    <main>        
-        <div class="slider-area slider-bg ">            
+    <main>
+        <div class="slider-area slider-bg ">
             <div class="single-slider d-flex align-items-center" style="min-height: 350px;">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
@@ -117,25 +119,22 @@
                         </div>
                     </div>
                 </div>
-            </div>            
-            <div class="slider-shape d-none d-lg-block">               
             </div>
-        </div>                
-
-
-
+            <div class="slider-shape d-none d-lg-block">
+            </div>
+        </div>
         <section style="padding: 35px;">
             <div class="container">
                 <h3 style="text-align: center;">Prueba suerte en nuestra sorteo de promociones</h3>
                 <div class="col-12" id="val">
 
                     <h5 style="text-align: center;">Siguenos en facebook y llena el formulário para continuar</h5>
-                    <br>                    
-                    
-                    <div class="fb-like d-flex justify-content-center" data-href="https://www.facebook.com/techandgame101" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
-                                        
                     <br>
-                    <div class="d-flex justify-content-center">                        
+
+                    <div class="fb-like d-flex justify-content-center" data-href="https://www.facebook.com/techandgame101" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+
+                    <br>
+                    <div class="d-flex justify-content-center">
                         <form id="formulario_promocion">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Código de participación</label>
@@ -147,9 +146,9 @@
                                 <label class="form-check-label" for="">Los sigo en facebook ♥</label>
                             </div>
                             <button id="enviarCodigo" type="submit" class="btn btn-primary">Envíar</button>
-                        </form>                        
+                        </form>
                     </div>
-                    
+
                 </div>
                 <br>
                 <div class="col-12" id="ruleta" style="display:none;">
@@ -195,13 +194,13 @@
                 <div class="container">
                     <div class="row d-flex justify-content-between">
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-footer-caption mb-50">                                
+                            <div class="single-footer-caption mb-50">
                                 <div class="footer-logo mb-25">
                                     <a href="index.html"><img width="250" height="" src="assets/img/logo/elbiuenosegun.png" alt=""></a>
                                 </div>
                                 <div class="footer-tittle mb-50">
                                     <p>Suscríbete a nuestro Newletter y mantente informado sobre lo &uacute;ltimo en tecnolog&iacute;a. </p>
-                                </div>                                
+                                </div>
                                 <div class="footer-form">
                                     <div id="mc_embed_signup">
                                         <form target="_blank" action="https://solucionesrp.us6.list-manage.com/subscribe/post?u=fd24464c83124fc26154fb0b0&amp;id=c1ebeba151" method="get" class="subscribe_form relative mail_part" novalidate="true">
@@ -214,8 +213,8 @@
                                             <div class="mt-10 info" style="color:white; text-align:center;"></div>
                                         </form>
                                     </div>
-                                </div>                                
-                                <div class="footer-social mt-50">                                    
+                                </div>
+                                <div class="footer-social mt-50">
                                     <a href="https://www.facebook.com/techandgame101"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://www.instagram.com/soluciones.rp/"><i class="fab fa-instagram"></i></a>
                                 </div>
@@ -261,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
             <div class="footer-bottom-area">
                 <div class="container">
                     <div class="footer-border">
@@ -283,27 +282,27 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
     <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
-    
-    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>    
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>    
+    <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/jquery.slicknav.min.js"></script>
-    
+
     <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>    
+    <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/animated.headline.js"></script>
     <script src="./assets/js/jquery.magnific-popup.js"></script>
-    
-    <script src="./assets/js/gijgo.min.js"></script>    
+
+    <script src="./assets/js/gijgo.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
     <script src="./assets/js/jquery.sticky.js"></script>
-    
+
     <script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/waypoints.min.js"></script>
     <script src="./assets/js/jquery.countdown.min.js"></script>
@@ -314,7 +313,7 @@
     <script src="./assets/js/jquery.validate.min.js"></script>
     <script src="./assets/js/mail-script.js"></script>
     <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-    
+
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
 
