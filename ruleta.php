@@ -184,6 +184,11 @@
                             </tr>
                         </tbody>
                     </table>
+                    <form action="premio.php" method="post">
+                        <input type="hidden" id="premio" name="premio" class="form-control">
+                        <input type="hidden" id="codigo2" name="codigo2" class="form-control">
+                        <button type="submit" class="btn">Obtener premio</button>
+                    </form>
                     <small>*Aplican restricciones</small>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 <?php
     
-    $con = mysqli_connect("127.0.0.1", "u526744503_root
-    ", "L]p6c1G/a3", "u526744503_tech");
+    $con = mysqli_connect("127.0.0.1", "u526744503_root", "L]p6c1G/a3", "u526744503_tech");
     if(!$con){
         die("imposible conectarse: ".mysqli_error($con));
     }

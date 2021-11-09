@@ -1,7 +1,7 @@
     $("#formulario_promocion").submit(function (event) {
         if (confirm("¿Realmente deseas canjear este código?")) {
             $('#enviarCodigo').attr("disabled", true);
-
+            var codigo = $("#codigo").val();    
             var parametros = $(this).serialize();
             $.ajax({
                 type: "POST",
@@ -37,9 +37,11 @@
                         };
                         updateCount();
                     });
-
-                    $('#enviarCodigo').attr("disabled", false);
-                    load(1);   
+                    
+                        $('#enviarCodigo').attr("disabled", false);                    
+                        $("#premio").val(num);
+                        $("#codigo2").val(codigo);
+                        load(1);   
                     }
                     
                     else if(datos == 2){
