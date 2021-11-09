@@ -293,7 +293,7 @@
                                 <h2>¡Soluciones para todos!</h2>
                             </div>
                             <p class="mb-40">En Tech & Game buscamos ofrecer soluciones tecnológicas, para implementar mejoras exitosas acordes a las necesidades de nuestros clientes y un servicio basado en la empatía.</p>
-                            <p>¡Conocenos y descubre porque solo la mejor opción!</p>
+                            <p>¡Conocenos y descubre porque somos la mejor opción!</p>
                             <ul style="display: none;">
                                 <li>
                                     <img src="assets/img/icon/right.svg" alt="">
