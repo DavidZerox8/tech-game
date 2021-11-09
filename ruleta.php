@@ -164,26 +164,27 @@
                         <tbody>
                             <tr>
                                 <td>01 al 20</td>
-                                <td>Pendiente</td>
+                                <td>Descuento del 5% en tu siguiente compra.</td>
                             </tr>
                             <tr>
                                 <td>21 al 60</td>
-                                <td>Pendiente</td>
+                                <td>Descuento del 10% en tu siguiente compra.</td>
                             </tr>
                             <tr>
                                 <td>61 al 89</td>
-                                <td>Pendiente</td>
+                                <td>Cupón valido por $50.</td>
                             </tr>
                             <tr>
                                 <td>90 al 99</td>
-                                <td>Descuento del 5%</td>
+                                <td>Instalación de un programa gratis.</td>
                             </tr>
                             <tr>
                                 <td>100</td>
-                                <td>Cupon válido por $100</td>
+                                <td>Cupon válido por articulo participante.</td>
                             </tr>
                         </tbody>
                     </table>
+                    <small>*Aplican restricciones</small>
                 </div>
             </div>
         </section>
