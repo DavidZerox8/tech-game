@@ -28,12 +28,12 @@
         
             elseif($count == 1 and $estatus == "Entregado"){
             
-                echo "Código y cupón validos.";
+                echo "Código valido, pero no ha sido cajenado aún.";
             }
         
             elseif($count == 1 and $estatus == "Canjeado"){
             
-                echo "Código y cupón invalidos, ya fueron cnajeados (Favor de validar con sistemas de ser necesario).";
+                echo "Código canjeado, solicitar cupón al cliente.";
             }
         
             else{
