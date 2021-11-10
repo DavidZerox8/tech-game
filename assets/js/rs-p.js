@@ -18,7 +18,7 @@
                     document.getElementById("ruleta").style.display = 'block';
                     
                     var min = 1;
-                    var max = 100;
+                    var max = 99;
 
                     var num = Math.round(Math.random() * (max - min) + min);
                     const counters = document.querySelectorAll('.counter');
