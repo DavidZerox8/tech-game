@@ -1,3 +1,11 @@
+<?php
+
+    $acceso = $_GET['acceso'];
+    if(empty($acceso)){
+        header("location: index.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
