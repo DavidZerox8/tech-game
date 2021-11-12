@@ -16,7 +16,7 @@
         $valor = "una instalación de un programa gratis.";
     }
     elseif($premio == 100){
-        $valor = "un cupon válido por articulo participante.";
+        $valor = "un cupon válido para participar por un artículo gratis.";
     }    
 ?>
 <!DOCTYPE html>

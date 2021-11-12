@@ -164,11 +164,11 @@
                         <tbody>
                             <tr>
                                 <td>01 al 20</td>
-                                <td>Descuento del 5% en tu siguiente compra.</td>
+                                <td>Descuento del 5% en tu siguiente compra.*</td>
                             </tr>
                             <tr>
                                 <td>21 al 60</td>
-                                <td>Descuento del 10% en tu siguiente compra.</td>
+                                <td>Descuento del 10% en tu siguiente compra.*</td>
                             </tr>
                             <tr>
                                 <td>61 al 89</td>
@@ -176,11 +176,11 @@
                             </tr>
                             <tr>
                                 <td>90 al 99</td>
-                                <td>Instalación de un programa gratis.</td>
+                                <td>Instalación de un programa gratis.*</td>
                             </tr>
                             <tr>
                                 <td>100</td>
-                                <td>Cupon válido por articulo participante.</td>
+                                <td>Cupon válido para participar por un artículo gratis.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -188,8 +188,9 @@
                         <input type="hidden" id="premio" name="premio" class="form-control">
                         <input type="hidden" id="codigo2" name="codigo2" class="form-control">
                         <button type="submit" class="btn">Obtener premio</button>
+                        <a href="assets/documents/Cat%C3%A1logo%20de%20prodcutos.pdf">Ver lista de premios.</a>
                     </form>
-                    <small>*Aplican restricciones</small>
+                    <small>*Aplican terminos y condiciones.</small>
                 </div>
             </div>
         </section>
