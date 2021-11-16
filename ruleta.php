@@ -187,8 +187,8 @@
                     <form action="premio.php" method="post">
                         <input type="hidden" id="premio" name="premio" class="form-control">
                         <input type="hidden" id="codigo2" name="codigo2" class="form-control">
-                        <button type="submit" class="btn">Obtener premio</button> <br>
-                        <a style="color:black;" href="assets/documents/Cat%C3%A1logo%20de%20prodcutos.pdf">Ver lista de premios.</a>
+                        <button type="submit" class="btn">Obtener premio</button> <br> <br>
+                        <a target="_blank" style="color:#2D0A31;" href="assets/documents/Cat%C3%A1logo%20de%20prodcutos.pdf">Ver lista de premios.</a>
                     </form>
                     <small>*Aplican terminos y condiciones.</small>
                 </div>
