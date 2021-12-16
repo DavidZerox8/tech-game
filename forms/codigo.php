@@ -17,7 +17,7 @@
         foreach ($query as $r):
             $estatus = $r['estado'];
         endforeach;
-        if($count == 1 and $estatus == "Disponible"){
+        if($count == 1 and $estatus == "Entregado"){
             
             $eliminar = "Update codigo set estado = 'Canjeado' where codigo = '$codigo'";
             $ex = mysqli_query($con,$eliminar);
