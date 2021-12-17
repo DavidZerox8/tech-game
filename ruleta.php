@@ -172,7 +172,7 @@
                             </tr>
                             <tr>
                                 <td>61 al 89</td>
-                                <td>Cupón valido por $50.</td>
+                                <td>Cupón valido por $50.**</td>
                             </tr>
                             <tr>
                                 <td>90 al 99</td>
@@ -191,6 +191,7 @@
                         <a target="_blank" style="color:#2D0A31;" href="assets/documents/Cat%C3%A1logo%20de%20prodcutos.pdf">Ver lista de premios.</a>
                     </form>
                     <small>*Aplican terminos y condiciones.</small>
+                    <small>**Valido en artículos con precio a partir de $250.</small>
                 </div>
             </div>
         </section>
